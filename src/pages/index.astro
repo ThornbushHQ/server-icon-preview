@@ -1,0 +1,24 @@
+---
+import FileUpload from "../components/FileUpload.svelte";
+import "@fontsource-variable/inter";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body
+    class="bg-indigo-400/50 dark:bg-stone-900 flex flex-col gap-24 items-center justify-center min-h-screen transition-all duration-100 ease-in-out font-sans"
+  >
+    <h1
+      class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center dark:text-white"
+    >
+      Discord Server Icon Preview
+    </h1>
+    <FileUpload client:load />
+  </body>
+</html>
